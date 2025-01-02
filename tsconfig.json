@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Ensures relative imports are easier to manage
+    "paths": {
+      "@/*": ["./src/*"] // Alias for accessing `src` folder
+    },
+    "types": ["styled-jsx"], // Ensures styled-jsx types are included
+    "moduleResolution": "node", // Correct module resolution for Node.js
+    "esModuleInterop": true, // Compatibility with ES modules
+    "strict": true, // Enables strict type checking
+    "target": "esnext", // Ensures modern JavaScript features
+    "jsx": "react-jsx", // Enables JSX syntax for React
+    "lib": ["dom", "esnext"], // Adds DOM and ESNext APIs
+    "skipLibCheck": true, // Optional: Skips checking declaration files for better performance
+    "module": "esnext", // Uses ESNext module syntax
+    "allowSyntheticDefaultImports": true, // Allows default imports
+    "forceConsistentCasingInFileNames": true // Enforces consistent file naming
+  },
+  "include": ["src"], // Specifies the root directory for files to be compiled
+  "exclude": ["node_modules", "dist"], // Excludes unnecessary directories
+  "references": [
+    // { "path": "./tsconfig.app.json" },
+    // { "path": "./tsconfig.node.json" }
+  ]
+}
